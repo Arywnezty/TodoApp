@@ -1,0 +1,210 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Tahoma, Arial, sans-serif;
+        }
+
+        body {
+            max-width: 100vw;
+            min-height: 100vh;
+            padding: 20px;
+            background-color: #0a0134;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+             color: white;
+            margin-bottom: 20px;
+            font-size:50px;
+            font-weight: bold;
+          }
+          
+          h1:hover {
+            color: orangered;
+            cursor: pointer;
+          }
+           .adder{
+                 display: flex;
+                   gap: 6px;
+           }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        #add-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 20%;
+        }
+
+        #add-btn:hover {
+            background-color: #45a049;
+        }
+
+        .edit-input {
+            padding: 8px;
+            border: 2px solid #2196F3;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 50%;
+            margin-right: 8px;
+        }
+        
+        .save-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        
+        .cancel-btn {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .save-btn:hover {
+            background-color: #45a049;
+        }
+        
+        .cancel-btn:hover {
+            background-color: #d32f2f;
+        }
+
+        #root {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        #root ul {
+            list-style-type: none;
+        }
+
+        #root li {
+            background-color: white;
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(100, 100, 255, 24.15)
+        }
+
+        #root li span {
+            flex: 1;
+            word-break: break-word;
+            min-width: 150px;
+        }
+
+        #root li button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #root li button:nth-of-type(1) {
+            background-color: #f44336;
+            color: white;
+        }
+
+        #root li button:nth-of-type(2) {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        #root li button:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            input[type="text"], #add-btn {
+                padding: 10px 15px;
+            }
+            
+            #root li {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            
+            #root li span {
+                width: 100%;
+                margin-bottom: 8px;
+            }
+            
+            #root li button {
+                width: 100%;
+            }
+        }
+        .filter-buttons {
+            margin-bottom: 15px;
+        }
+        
+        .filter-buttons button {
+            padding: 5px 10px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        
+        .filter-buttons button.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            padding: 8px;
+            margin: 5px 0;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        li.done {
+            background-color: #e0ffe0;
+        }
+        
+        li.done span {
+            text-decoration: line-through;
+            color: #888;
+        }
+        
+        button {
+            margin-left: 5px;
+            cursor: pointer;
+        }
